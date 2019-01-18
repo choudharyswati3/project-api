@@ -7,7 +7,7 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class Operations {
+public class APITesting {
 
     static  String strPost = "{\n" +
             "   \"title\": \"swati\",\n" +
@@ -33,11 +33,11 @@ public class Operations {
         map.put("content-type","application/json");
         map.put("charset","UTF-8");
 
-        Operations operations = new Operations();
-        operations.post(url);
-        operations.get(url2);
-        operations.put(url2);
-        operations.del(url2);
+        APITesting apitesting = new APITesting();
+        apitesting.post(url);
+        apitesting.get(url2);
+        apitesting.put(url2);
+        apitesting.del(url2);
 
 
         }
